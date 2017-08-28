@@ -1,0 +1,4 @@
+java.util包提供了Date类来封装
+两个构造函数
+	Date() //使用当前日期和时间来初始化对象
+	Date(long millisec) //接受一个参数，毫秒数

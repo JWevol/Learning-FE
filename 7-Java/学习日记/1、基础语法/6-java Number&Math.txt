@@ -1,0 +1,10 @@
+常见情况
+    需要使用数字的时候，我们通常使用内置数据类型
+	如 byte, int, long, double
+
+实际开发过程中，我们会遇到使用对象，为解决这个问题，java语言为每一个内置数据类型提供了对应的包装类
+包装类
+如
+所有的包装类(integer, long, byte, double, float, short都是抽象类Number的子类)
+
+Number类属于java.lang 

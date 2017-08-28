@@ -1,0 +1,34 @@
+数组用来存储固定大小的同类型元素
+
+1、声明数组变量
+    datatype[] arratRefVar //首选方法
+
+
+2、创建数组
+array = new dataType[arraySize]
+
+做了两件事
+    1、使用dataType[arraySize]创建了数组
+    2、把新创建的数组的引用赋值给变量array
+
+
+数组变量的声明和创建数组可以用一条语句完成：
+ dataType[] arrayR = new dataType[arraySize]
+
+or 
+
+dataType[] arrayR = {value0, value1, ..., valuek};
+
+
+3、处理数组
+使用基本循环或foreach循环
+
+
+4、Arrays类
+java.util.Arrays能方便地操作数组，提供的所有方法都是静态的
+
+功能：
+	给数组赋值：fill
+	对数组排序：sort升序
+	比较数组：equals
+	查找数组元素：binarySearch 二分查找

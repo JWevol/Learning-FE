@@ -1,0 +1,30 @@
+java基本语法
+	大小写敏感
+	类名。首字母大写
+	方法名。首字母小写，驼峰
+	源文件名必须和类名相同。
+	主方法入口 public static void main(String []args)
+java标识符命令
+	大小写字母，美元符，下划线
+
+java修饰符
+	访问控制类型：	default public protected private
+	非访问控制修饰符：final abstract strictfp
+
+java变量域
+	局部
+	类变量（静态）
+	成员变量（非静态）
+
+java数组
+	java是堆对象，可保存多个同类型变量
+java枚举
+	预先设定好的值
+java注释
+	doc注释
+java继承
+	类派生类
+	被继承的类为超类。派生类为子类
+
+java接口
+	对象间相互通信的协议

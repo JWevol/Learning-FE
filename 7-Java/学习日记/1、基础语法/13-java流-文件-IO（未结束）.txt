@@ -1,0 +1,18 @@
+Java.io包含了几乎所有的操作输入、输出需要的类。
+
+Java.io包中的流支持很多格式：基本类型、对象、本地化字符集
+
+
+1、读取控制台输入
+System.in
+
+为获得一个绑定到控制台的字符流，你可以把System.in包装在一个BufferedReader对象中创建一个字符流
+
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+
+2、从控制台读取多字符输入
+从BufferedReader对象读取一个字符要使用read()方法
+
+int read() throws IOException
+
+每次调用read()方法，它从输入流读取一个字符并把该字符作为整数值返回，流结束返回-1

@@ -92,7 +92,7 @@ const app = new Vue({
 
 不懂？
 
-意识: 动态路径参数 以 **冒号** 开头
+意识：动态路径参数 以 **冒号** 开头
 
 实例：
 ```javascript
@@ -325,7 +325,7 @@ const router = new VueRouter({
 <router-view class="view three" name="b"></router-view>
 ```
 
-一个视图使用一个组件渲染，那么对同一个路由，多个视图就需要多个组件，需要使用 components 配置
+一个视图使用一个组件渲染，那么**对同一个路由，多个视图就需要多个组件，需要使用 components 配置**
 ```javascript
 const router = new VueRouter({
   routes: [

@@ -99,7 +99,7 @@ print (str + "TEST") # 连接字符串RunoobTEST
 
 
 ### List列表 ### 
-List列表是Pyhon使用最多的数据类型。
+List列表是Python使用最多的数据类型。
 列表中元素的类型可以不相同，它支持数字，字符串，嵌套列表
 
 列表格式：
@@ -112,7 +112,7 @@ List列表是Pyhon使用最多的数据类型。
 +是列表连接符
 *是重复操作
 
-```
+```python
 list = [ 'abcd', 786 , 2.23, 'runoob', 70.2 ]
 tinylist = [123, 'runoob']
  
@@ -127,8 +127,8 @@ print (list + tinylist) # 连接列表['abcd', 786, 2.23, 'runoob', 70.2, 123, '
 #### 特别注意 ####
 字符串元素不可变，
 但列表中的元素是可变的
-```
->>>a = [1, 2, 3, 4, 5, 6]
+```python
+>>> a = [1, 2, 3, 4, 5, 6]
 >>> a[0] = 9
 >>> a[2:5] = [13, 14, 15]
 >>> a
@@ -149,7 +149,7 @@ print (list + tinylist) # 连接列表['abcd', 786, 2.23, 'runoob', 70.2, 123, '
 元祖格式：
 写在小括号里，元素之间用逗号隔开
 
-```
+```python
 tuple = ( 'abcd', 786 , 2.23, 'runoob', 70.2  )
 tinytuple = (123, 'runoob')
  
@@ -182,7 +182,7 @@ Set集合是一个**无序 不重复**的序列
 大括号或者set()函数创建集合
 
 注意:创建一个空集合必须用`set()`而不是`{ }`,因为`{ }`是用来创建一个空字典
-```
+```python
 student = {'Tom', 'Jim', 'Mary', 'Tom', 'Jack', 'Rose'}
  
 print(student)   # 输出集合，重复的元素被自动去掉{'Mary', 'Jim', 'Rose', 'Jack', 'Tom'}

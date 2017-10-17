@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2-构造函数</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 1 简单的用法
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+      this.say = function() {
+        return "我的名字叫" + this.name + "，" + this.age + "岁"
+      }
+    }
+
+    var Cat = new Person("Cat", 5);
+    var Dog = new Person("Dog", 4);
+
+    // 2 解决内存占用的问题
+    function Person2(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    Person2.prototype.say = function() {
+      console.log("Person2: 我的名字叫" + this.name + "，" + this.age + "岁")
+    }
+
+    var Cat2 = new Person2("Cat2", 52);
+    var Dog2 = new Person2("Dog2", 42);
+
+    // 3 如果不使用 new 实例化，可能会产生一些this指向问题
+    // 进行改进，强制使用 new
+    function Person3(name, age) {
+      if (!(this instanceof Person3)) {
+        return new Person3(name, age);
+      }
+
+      this.name = name;
+      this.age = age;
+    }
+
+    Person3.prototype.say = function() {
+      console.log("Person3: 我的名字叫" + this.name + "，" + this.age + "岁")
+    }
+
+    var Cat3 = new Person3("Cat3", 523);
+    var Dog3 = new Person3("Dog3", 423);
+  </script>
+</body>
+</html>

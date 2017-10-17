@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1-单例模式</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var SingletonTest = (function() {
+      // 参数：需要传的参数
+      function Singleton(args) {
+          var args = args || {};
+
+          this.name = args.name || 'cat';
+          this.age = args.age || '22';
+      }
+
+      // 实例容器
+      var instance;
+
+      var _static = {
+        name: 'SingletonTest',
+
+        // 获取实例方法，返回Singleton实例
+        getInstance: function(args) {
+          if (!instance) {
+              instance = new Singleton(args);
+          }
+
+          return instance;
+        }
+      }
+
+      return _static;
+    })();
+
+    var oneSing = SingletonTest.getInstance({ name: 'dog' });
+    console.log(oneSing.name);
+  </script>
+</body>
+</html>

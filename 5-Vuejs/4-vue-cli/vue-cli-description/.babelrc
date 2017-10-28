@@ -1,0 +1,25 @@
+{
+  // 转码规则
+  "presets": [
+    // 借助插件 babel-preset-env，表示对 es6, es7, es8 转码，并且设置amd, commonjs这样的模块化文件，不转码
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    // 不同阶段出现的 es 语法，包含不同的转码插件
+    "stage-2"
+  ],
+  // 引用插件来处理代码的转换，transform-runtime 用来处理全局函数和优化 babel 编译
+  "plugins": ["transform-runtime"],
+  // 在特定环境中所执行的转码规则
+  "env": {
+    // 会覆盖上面的设置
+    "test": {
+      "presets": ["env", "stage-2"],
+      // 用来测试转码后代码的工具
+      "plugins": ["istanbul"]
+    }
+  }
+}
